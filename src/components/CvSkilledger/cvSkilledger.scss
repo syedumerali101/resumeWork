@@ -1,0 +1,35 @@
+@import "../../css/styles/colors";
+
+.cvSkilledger {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__btn {
+    margin-bottom: 20px;
+  }
+  &__message {
+    background-color: $dark-grey-bg;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    // justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    &__qrCode {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: $darker-grey-bg;
+      color: $default-black;
+      width: 50%;
+    }
+  }
+}

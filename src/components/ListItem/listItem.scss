@@ -1,0 +1,63 @@
+@import "../../css/styles/colors";
+
+.listItem {
+  height: 70px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid $dark-border;
+  // background-color: $dark-grey-bg;
+  border-radius: 6px;
+  font-size: 13px;
+  &__row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 70%;
+      height: 100%;
+    }
+    &__actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 30%;
+      height: 100%;
+    }
+    &__col {
+      height: 100%;
+      display: flex;
+      text-align: left;
+      position: relative;
+      flex-direction: column;
+      justify-content: space-evenly;
+      &__iconContainer {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        -webkit-transition: background 0.3s ease-in-out;
+        -o-transition: background 0.3s ease-in-out;
+        &:hover {
+          background-color: $dark-grey-bg;
+        }
+      }
+      &--action {
+        text-align: center !important;
+      }
+    }
+  }
+}
